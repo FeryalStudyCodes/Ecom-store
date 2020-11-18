@@ -39,12 +39,12 @@ echo "</div>";
 echo "</div>";
 ?>
  <!-- start of hero -->
-  <section class="hero-slider hero-style ">
+  <section class="hero-slider hero-style" id="hero">
     <div class="swiper-container">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <div class="slide-inner slide-bg-image"
-            data-background="https://images.pexels.com/photos/3178938/pexels-photo-3178938.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+            data-background="https://i.pinimg.com/originals/ed/c9/5a/edc95a3a7b8c8918448d0b832067f027.jpg">
             <div class="black-bg"></div>
             <div class="container">
               <h1>New Collection</h1>
@@ -55,7 +55,7 @@ echo "</div>";
 
         <div class="swiper-slide">
           <div class="slide-inner slide-bg-image"
-            data-background="https://images.pexels.com/photos/583842/pexels-photo-583842.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+            data-background="https://www.lg.com/global/images/Banner/lg-signature-hero-banner-oled-8k-tv-refrigerator-washing-machine-air-purifier-desktop.jpg">
             <div class="black-bg"></div>
             <div class="container">
               <div class="clearfix"></div>
@@ -66,7 +66,7 @@ echo "</div>";
 
         <div class="swiper-slide">
           <div class="slide-inner slide-bg-image"
-            data-background="https://images.pexels.com/photos/450035/pexels-photo-450035.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+            data-background="https://www.apple.com/v/macbook-pro-13/f/images/overview/hero_endframe__bsza6x4fldiq_large.jpg">
             <div class="black-bg"></div>
             <div class="container">
               <div class="clearfix"></div>
@@ -76,7 +76,7 @@ echo "</div>";
 
         <div class="swiper-slide">
           <div class="slide-inner slide-bg-image"
-            data-background="https://images.pexels.com/photos/887751/pexels-photo-887751.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+            data-background="https://www.apple.com/v/macbook-air/i/images/overview/hero_endframe__ea0qze85eyi6_large.jpg">
             <div class="black-bg"></div>
             <div class="container">
               <div class="clearfix"></div>
@@ -93,7 +93,8 @@ echo "</div>";
   </section>
 <!-- end of hero slider  -->
 
-<div class="text-right" id="section-title"><h1 style="margin: 2rem 4rem 0 4rem;">آخر المنتجات</h1></div>  
+<section style="margin: 10rem 0 0 0;">
+  <div class="text-center" id="section-title"><h1 style="margin: 2rem 4rem 0 4rem;">آخر المنتجات</h1></div>  
   <!-- The slideshow -->
   <div class="container" style="padding: 0rem;">
     <div class="active row orginize card-slider">
@@ -152,6 +153,7 @@ echo "</div>";
    </div>
     </main>
     </div>
+    </section>
     <div class="carousel-item">
     <div class="row">
     <?php 
@@ -267,6 +269,7 @@ echo "</div>";
      </div>
      </div>
     </div>
+
   
   <!-- Left and right controls -->
   <!-- <a class="carousel-control-prev" href="#demo" data-slide="prev">

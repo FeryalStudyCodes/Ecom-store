@@ -24,7 +24,8 @@ img {
 }
 
 .navbar {
-    opacity: 0.9;
+    /* opacity: 0.9; */
+     opacity: 1;
     margin-bottom: 0;
     background-color: #fff;
     -webkit-transition: all 0.2s ease-out;
@@ -69,6 +70,9 @@ img {
     transition: all 0.2s ease-out;
 }
 
+#main-navbar{
+    opacity: 1;
+}
 .navbar-brand {
     max-width: 230px;
     height: 39px;
@@ -313,7 +317,8 @@ ul.multi-column-dropdown h6 {
 .upper-bar .dropdown-menu.show {
     background-color: #5B298D;
     display: block;
-    opacity: 0.8;
+    /* opacity: 0.8; */
+       opacity: 1;
 }
 
 svg {
@@ -365,16 +370,17 @@ svg {
     margin-left: 0px;
     border-radius: 5px;
 }
-
+#hero{
+    top:7em;
+}
 .hero-slider {
     width: 100%;
-    height: 100vh;
+    height: 85vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     position: relative;
     z-index: 0;
-    top: 0;
     background-size: contain;
     background-color: #d4d3d3;
 }
@@ -386,18 +392,16 @@ svg {
 
 .hero-slider .swiper-container {
     width: 100%;
-    height: 100vh;
+     height: 85vh;
     position: absolute;
     left: 0;
-    top: 0;
 }
 
 .hero-slider .slide-inner {
     width: 100%;
-    height: 100vh;
+    height: 85vh;
     position: absolute;
     left: 0;
-    top: 0;
     z-index: 1;
     background-size: cover;
     background-position: center;
@@ -497,7 +501,7 @@ svg {
 }
 
 .hero-style {
-    height: 100vh;
+    height: 85vh;
     transition: all 0.4s ease;
 }
 
@@ -652,16 +656,18 @@ a:focus {
     justify-content: center;
     background: #ff8100;
     color: white;
-    padding: 1px 3px 0 3px;
+    padding: 3px;
     min-width: 14px;
     height: 14px;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 11px;
     line-height: inherit;
     text-align: center;
-    position: absolute;
+    margin-top: -30px;
+    margin-right: -9px;
+    margin-left: 10px;
+    /* position: absolute; */
     top: 40px;
-    left: 272px;
+    /* left: 272px; */
     z-index: 2;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
@@ -676,24 +682,45 @@ a:focus {
 }
 
 .ty-miniwish-count {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #ff8100;
-    color: white;
-    padding: 1px 3px 0 3px;
-    min-width: 14px;
-    height: 14px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 11px;
-    line-height: inherit;
-    text-align: center;
-    position: absolute;
-    top: 40px;
-    left: 223px;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    border-radius: 8px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background: #ff8100;
+     color: white;
+     padding: 3px;
+     min-width: 14px;
+     height: 14px;
+     font-size: 11px;
+     line-height: inherit;
+     text-align: center;
+     /* position: absolute; */
+     top: 40px;
+     /* left: 272px; */
+     z-index: 2;
+     -webkit-border-radius: 8px;
+     -moz-border-radius: 8px;
+     border-radius: 8px;
+}
+
+.badge{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ff8100;
+  color: white;
+  padding: 3px;
+  min-width: 14px;
+  height: 14px;
+  font-size: 11px;
+  line-height: inherit;
+  text-align: center;
+  /* position: absolute; */
+  top: 40px;
+  /* left: 272px; */
+  z-index: 2;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
 }
 
 /*Start Slider product*/

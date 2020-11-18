@@ -25,7 +25,7 @@ $_SESSION['wish']=isset($_SESSION['wish']) ? $_SESSION['wish'] : array();
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel="stylesheet" href="/Ecom-store-project/app/assets/css/smoothproducts.css">
     <link rel="stylesheet" type="text/css" href="/Ecom-store-project/app/assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="/Ecom-store-project1/app/assets/css/bars-style.css">
+    <link rel="stylesheet" href="/Ecom-store-project/app/assets/css/bars-style.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <script src="https://kit.fontawesome.com/ca3696487d.js" crossorigin="anonymous"></script>
@@ -50,8 +50,13 @@ $_SESSION['wish']=isset($_SESSION['wish']) ? $_SESSION['wish'] : array();
           <div class="container">
             <ul class="row bar-info float-child">
             <div class="col-sm info text-center text-sm-left">
-              <li><a href="#"><i class="fas fa-phone" aria-hidden="true"></i></i><span class="fa-sphone"> +967 777 777 777 </span></a></li>
-              <li><a href="#"><i class="fas fa-envelope" aria-hidden="true"></i><span class="fa-semail"> login@gmail.com </span></a></li>
+              <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></li>
+              <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></li>
+              <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></li>
+              <li><a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></li>
+              <!-- <li><a href="#"><i class="fas fa-phone" aria-hidden="true"></i></i><span class="fa-sphone"> +967 777 777 777 </span></a></li> -->
+              <!-- <li><a href="#"><i class="fas fa-envelope" aria-hidden="true"></i><span class="fa-semail"> login@gmail.com </span></a></li> -->
+              
             </div>
             </ul>
             <ul class="row bar-log float-child">
@@ -85,7 +90,7 @@ $_SESSION['wish']=isset($_SESSION['wish']) ? $_SESSION['wish'] : array();
         <div class="container">
         <div class="header-holder">
       <div class="navbar-header">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="main/main">
             <img src="/Ecom-store-project1/app/assets/images/login_store_logos-2 (1).png" style="/* width:20%; *//* height:50%; */">
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -97,8 +102,8 @@ $_SESSION['wish']=isset($_SESSION['wish']) ? $_SESSION['wish'] : array();
 					<ul class="nav navbar-nav navbar-left">
 						<li class="nav-item active menu-item"><a href="main/main">الرئيسية<span class="sr-only">(current)</span></a></li>
 						<li class="nav-item menu-item"><a class="nav-link" href="main/getcat">الأقسام</a></li>
-						<li class="nav-item menu-item"><a class="nav-link" href="#">المنتجات</a></li>
-						<li class="nav-item menu-item"><a class="nav-link" href="#">العروض</a></li>
+            <li class="nav-item menu-item"><a class="nav-link" href="#">العروض</a></li>
+            <li class="nav-item menu-item"><a class="nav-link" href="#">عن المتجر</a></li>
             <li class="nav-item menu-item"><a class="nav-link" href="#">تواصل معنا</a></li>
             <li class="nav-item menu-item">
              <a class="nav-link" href="main/displayShopingCartItems">

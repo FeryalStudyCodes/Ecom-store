@@ -70,6 +70,10 @@ img {
     transition: all 0.2s ease-out;
 }
 
+.navbar .navbar-nav li a:hover{
+    color: #F58B20;
+}
+
 #main-navbar{
     opacity: 1;
 }
@@ -2754,6 +2758,7 @@ ul.product-top-list li {
     left: 0;
     z-index: 1030;
     padding: 0;
+    border-bottom: 0.2px solid rgba(128, 128, 128, 0.349);
 }
 
 .navbar-nav {

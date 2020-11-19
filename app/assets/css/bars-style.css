@@ -2489,7 +2489,8 @@ ul.product-top-list li {
     border-radius: 2rem;
     overflow: hidden;
     background-color: white;
-    border: 1px solid rgba(182, 182, 182, 0.479);
+    /* border: 1px solid rgba(182, 182, 182, 0.479); */
+    border: 1px solid #90909073;
     margin: 0.2rem;
 }
 
@@ -2676,12 +2677,13 @@ ul.product-top-list li {
       padding: 25px
   } */
 
+
 .product-store .title {
     display: block;
     font-size: 15px;
     font-weight: 400;
     text-transform: capitalize;
-    margin: 0 0 7px;
+    margin: 0 0 15px;
     transition: all .3s ease 0s;
     /* line-height: 2.2rem; */
     line-height: 1.5em;
@@ -2698,7 +2700,16 @@ ul.product-top-list li {
     -webkit-box-orient: vertical;
 }
 
-.product-store .title a {
+.product-name a {
+    /* color: #0b0c0c; */
+    color: #212529;
+}
+
+.product-name a:hover{
+    text-decoration: underline;
+}
+
+.product-store .title {
     color: #909090;
 }
 
@@ -2726,7 +2737,8 @@ ul.product-top-list li {
 }
 
 .product-store .add-to-cart {
-    border: 1px solid #e5e5e5;
+    /* border: 1px solid #e5e5e5; */
+    border: 1px solid #90909073;
     display: inline-block;
     padding: 10px 20px;
     color: #888;
@@ -2792,7 +2804,8 @@ ul.product-top-list li {
 }
 
 .navbar-light .navbar-toggler-icon {
-    background-image: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e);
+    /* background-image: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e); */
+background-image: url(data:https://www.flaticon.com/svg/static/icons/svg/812/812847.svg);
 }
 
 .navbar-toggler {

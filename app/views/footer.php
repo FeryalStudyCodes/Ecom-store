@@ -132,7 +132,9 @@ var interleaveOffset = 0.5;
 var swiperOptions = {
     loop: true,
     speed: 1000,
-    parallax: true,
+    spaceBetween: 20,
+    effect: 'fade',
+    parallax: false,
     autoplay: {
         delay: 5500,
         disableOnInteraction: false,
@@ -149,16 +151,16 @@ var swiperOptions = {
     },
 
     on: {
-        progress: function () {
-            var swiper = this;
-            for (var i = 0; i < swiper.slides.length; i++) {
-                var slideProgress = swiper.slides[i].progress;
-                var innerOffset = swiper.width * interleaveOffset;
-                var innerTranslate = slideProgress * innerOffset;
-                swiper.slides[i].querySelector(".slide-inner").style.transform =
-                    "translate3d(" + innerTranslate + "px, 0, 0)";
-            }
-        },
+        // progress: function () {
+        //     var swiper = this;
+        //     for (var i = 0; i < swiper.slides.length; i++) {
+        //         var slideProgress = swiper.slides[i].progress;
+        //         var innerOffset = swiper.width * interleaveOffset;
+        //         var innerTranslate = slideProgress * innerOffset;
+        //         swiper.slides[i].querySelector(".slide-inner").style.transform =
+        //             "translate3d(" + innerTranslate + "px, 0, 0)";
+        //     }
+        // },
 
         touchStart: function () {
             var swiper = this;
@@ -187,6 +189,21 @@ sliderBgSetting.each(function (indx) {
         $(this).css("background-image", "url(" + $(this).data("background") + ")");
     }
 });
+
+    // var swiper = new Swiper('.swiper-con', {
+    //   slidesPerView: 3,
+    //   spaceBetween: 15,
+    //   loop: true,
+    //   freeMode: true,
+    //   autoplay: {
+    //     delay: 5500,
+    //     disableOnInteraction: false,
+    // },
+    //   pagination: {
+    //     el: '.swiper-pagination',
+    //     clickable: true,
+    //   },
+    // });
 
   </script>
       

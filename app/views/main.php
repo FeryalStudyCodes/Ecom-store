@@ -2,42 +2,7 @@
  session_start();
 include "app/views/header.php"; 
 ?>
-   <?php
-   echo "<div class='col-md-12'>";
-   if($action=='added'){
-       echo "<div class='alert alert-info text-right'>";
-           echo "تم إضافة المنتج لسلّة التسوق";
-           echo "<a class='close'data-dismiss='alert' raia-label='close'>X</a>";
 
-       echo "</div>";
-
-   }
-
-   if($action=='exists'){
-       echo "<div class='alert alert-info text-right'>";
-           echo "المنتج موجود بالفعل في سلة ";
-           echo "<a class='close'data-dismiss='alert' raia-label='close'>X</a>";
-
-       echo "</div>";
-   }
-echo "</div>";
-?>
- <?php
-   echo "<div class='col-md-12'>";
-   if($action=='wishadded'){
-    echo "<div class='alert alert-info text-right'>";
-    echo "<a class='close' data-dismiss='alert' aria-label='close'>x</a>";
-        echo "تمت إضافة المنتج لقائمة أمنياتك";
-    echo "</div>";
-   }
-   if($action=='wishexists'){
-    echo "<div class='alert alert-info text-right'>";
-    echo "<a class='close' data-dismiss='alert' aria-label='close'>x</a>";
-        echo " المنتج موجود بالفعل في قائمة أمنياتك ";
-    echo "</div>";
-   }
-echo "</div>";
-?>
  <!-- start of hero -->
   <section class="hero-slider hero-style" id="hero">
     <div class="swiper-container">
@@ -93,8 +58,9 @@ echo "</div>";
   </section>
 <!-- end of hero slider  -->
 
+
 <section style="margin: 10rem 0 0 0;">
-  <div class="text-center" id="section-title"><h1 style="margin: 2rem 4rem 0 4rem;">آخر المنتجات</h1></div>  
+  <div class="text-center" id="section-title"><h1 style="margin: 2rem 4rem 0 6rem;">الحواسيب المحمولة</h1></div>  
   <!-- The slideshow -->
   <div class="container" style="padding: 0rem;">
     <div class="active row orginize card-slider">
@@ -120,16 +86,16 @@ echo "</div>";
                   </a>
                   <ul class="social">
                       <li><a href="main/product_details?action=product_details&product_id=<?PHP echo $id?>" data-tip="Quick View" style=" background: #F27523;"><i class="fa fa-eye"></i></a></li>
-                      <li><a href="main/wishlist" data-tip="Add to Wishlist" style=" background: #F27523;"><i class="fa fa-heart"></i></a></li>
+                      <li><a href="main/wishlist?id=<?=$id?>" data-tip="Add to Wishlist" style=" background: #F27523;"><i class="fa fa-heart"></i></a></li>
                       <li><a href="main/shopingCart?id=<?=$id ;?>" data-tip="Add to Cart" class="cart"  data-id='=<?= $id; ?>' style=" background: #F27523;"><i class="fa fa-shopping-cart "></i></a></li>
                   </ul>
               </div>
               <div class="card-price product-content">
-               <div class="card-name title">
-                  <h3 class="title"><a href="#"><p><?php  echo $row->product_short_desc ?></p></a></h3>
+               <div class="card-name">
+                  <h5 class="product-name"><a href="#"><p><?php  echo $row->product_name ?></p></a></h5>
+                  <h3 class="title"><p><?php  echo $row->product_short_desc ?></p></h3>
                   <div class="price">
                   <p>$<?= $row->product_price ?></p>
-                    <!-- <?php  echo $row->product_price ?> -->
                   </div>
                   <?PHP
                     // add to cart button
@@ -178,7 +144,7 @@ echo "</div>";
                   </a>
                   <ul class="social">
                       <li><a href="main/product_details?action=product_details&product_id=<?PHP echo $id?>" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
-                      <li><a href="main/wishlist" data-tip="Add to Wishlist"><i class="fa fa-heart"></i></a></li>
+                      <li><a href="main/wishlist?id=<?=$id?>" data-tip="Add to Wishlist"><i class="fa fa-heart"></i></a></li>
                       <li><a href="main/shopingCart?id=<?=$id ;?>" data-tip="Add to Cart" class="cart"  data-id='<?= $id; ?>' ><i class="fa fa-shopping-cart "></i></a></li>
                   </ul>
                  
@@ -235,7 +201,7 @@ echo "</div>";
                   </a>
                   <ul class="social">
                       <li><a href="main/product_details?action=product_details&product_id=<?PHP echo $id?>" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
-                      <li><a href="main/wishlist" data-tip="Add to Wishlist"><i class="fa fa-heart"></i></a></li>
+                      <li><a href="main/wishlist?id=<?=$id?>" data-tip="Add to Wishlist"><i class="fa fa-heart"></i></a></li>
                       <li><a href="main/shopingCart?id='<?=$id ;?>'" data-tip="Add to Cart" class="cart"  data-id='<?= $id; ?>' ><i class="fa fa-shopping-cart "></i></a></li>
                   </ul>
                  
@@ -269,48 +235,6 @@ echo "</div>";
      </div>
      </div>
     </div>
-
-  
-  <!-- Left and right controls -->
-  <!-- <a class="carousel-control-prev" href="#demo" data-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </a>
-  <a class="carousel-control-next" href="#demo" data-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </a>
-</div> -->
-
-<!-- Product slider End -->
-
-<!-- Product slider End -->
-<section class="three-column-images mt-5">
-  <div class="container " >
-    <div class="row">
-      <div class="col-xs-6 col-sm-4">
-        <img src="/Ecom-store-project/app/assets/images/add.jpg"
-             class="img-thumbnail img-responsive">
-        <a href="#" target="_blank"></a>
-         
-      </div>
-   
-       <div class="col-xs-6 col-sm-4">
-        <img src="/Ecom-store-project/app/assets/images/add2.jpg"
-             class="img-thumbnail img-responsive">
-        <a href="#" target="_blank"></a>
-        
-      </div>
-   
-      <div class="col-xs-6 col-sm-4">
-        <img src="/Ecom-store-project/app/assets/images/add.jpg"
-             class="img-thumbnail img-responsive">
-        <a href="#" target="_blank"></a>
-        
-      </div>
-      </div> 
-     </div>  
-  </section>
-
-<!-- Banner Start -->
 
 <!--Satrt Featured Product-->
 <div class="container">
